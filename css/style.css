@@ -33,7 +33,7 @@ header h1 {
 	letter-spacing: 1px;
 	position: absolute;
 	left: 50px;
-	top: 50%;
+	top: 30%;
 	transform: translateY(-150%);
 }
 header h1::after {
