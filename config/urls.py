@@ -16,11 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from config.views import main, burger_list, pseudo_recomm_research
+from config.views import main, burger_list, pseudo_recomm_research, burger_search
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", main),  # ""(공백)인 경로와 views/main 함수를 연결
     path("burgers/", burger_list),
-    path("pseudo-recomm-research", pseudo_recomm_research)
+    path("pseudo-recomm-research", pseudo_recomm_research),
+    path("search/", burger_search)
 ]
